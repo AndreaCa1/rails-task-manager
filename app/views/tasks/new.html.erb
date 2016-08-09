@@ -1,0 +1,8 @@
+<h1>Choose a new task</h1>
+<p>Go choose a new one</p>
+<%= form_for @task do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :description %>
+  <%= f.text_field :done %>
+  <%= f.submit %>
+<% end %>

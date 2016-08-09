@@ -1,0 +1,16 @@
+
+<h1>Welcome to your Tasks Manager</h1>
+<h2>These are all the Tasks</h2>
+<% @tasks.each do |task| %>
+  <p><%= task.name %></p>
+  <p><%= task.description %></p>
+  <p><%= task.done %></p>
+<% end %>
+
+
+
+
+
+<!-- a link to its show view (use a link_to helper)
+a link to its edit view
+a link to its delete action. Hint: a standard link does not allow to perform DELETE request, so here you should add a method: :delete option to your link_to helper. -->
